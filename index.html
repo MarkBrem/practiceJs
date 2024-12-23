@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <form id="conversionForm">
+    <label>
+      Введіть відстань:
+      <input type="number" id="distanceValue" placeholder="Значення" required>
+    </label>
+    <label>
+      Виберіть одиницю:
+      <select id="from">
+        <option value="m">Метр (m)</option>
+        <option value="cm">Сантиметр (cm)</option>
+        <option value="in">Дюйм (in)</option>
+        <option value="ft">Фут (ft)</option>
+        <option value="mm">Міліметр (mm)</option>
+        <option value="yd">Ярд (yd)</option>
+        <option value="km">Кілометр (km)</option>
+      </select>
+    </label>
+    <label>
+      Конвертувати в:
+      <select id="to">
+        <option value="m">Метр (m)</option>
+        <option value="cm">Сантиметр (cm)</option>
+        <option value="in">Дюйм (in)</option>
+        <option value="ft">Фут (ft)</option>
+        <option value="mm">Міліметр (mm)</option>
+        <option value="yd">Ярд (yd)</option>
+        <option value="km">Кілометр (km)</option>
+      </select>
+    </label>
+    <button type="submit">Конвертувати</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Введене значення</th>
+        <th>Одиниця</th>
+        <th>Результат</th>
+        <th>Одиниця результату</th>
+      </tr>
+    </thead>
+    <tbody id="resultTable">
+    </tbody>
+  </table>
+
+
+<script type="module" src="./index.js"></script>    
+</body>
+</html>
