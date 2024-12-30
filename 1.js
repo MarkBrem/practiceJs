@@ -28,3 +28,5 @@ const CONVERSION_RATES = {
       `;
       resultTable.appendChild(newRow);
     });
+
+
